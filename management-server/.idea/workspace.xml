@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -32,6 +35,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="CoreServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -87,9 +91,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586314806415" />
-    <state x="149" y="150" key="new project wizard" timestamp="1586267750394">
+    <state x="149" y="150" key="new project wizard" timestamp="1586315462027">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="149" y="150" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1586267750394" />
+    <state x="149" y="150" key="new project wizard/0.0.1440.900@0.0.1440.900" timestamp="1586315462027" />
   </component>
 </project>
