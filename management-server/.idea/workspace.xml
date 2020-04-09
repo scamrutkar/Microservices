@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f78e5a3c-8b2d-4db7-b33a-4a83d508bbeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/CoreServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/CoreServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/CoreServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/CoreServiceApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/core-service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/core-service-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/core-service-1.0-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/core-service-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db-service/src/main/java/com/sagar/javacase/DbServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/sagar/javacase/GatewayServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +57,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.javacase.sagar.model" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="CoreServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -81,42 +102,62 @@
       <option name="project" value="LOCAL" />
       <updated>1586315594440</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding db-service application class">
+      <created>1586315854980</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586315854980</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding db-service application setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding db-service application setup" />
+    <MESSAGE value="Adding db-service application class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding db-service application class" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="444" y="260" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586442939613">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="444" y="260" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1586442939613" />
+    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser" timestamp="1586438742892">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="174" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1586438742892" />
     <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586267829274">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1440.900@0.0.1440.900" timestamp="1586267829274" />
-    <state x="240" y="53" key="CommitChangelistDialog2" timestamp="1586315594123">
+    <state x="240" y="53" key="CommitChangelistDialog2" timestamp="1586315854751">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="240" y="53" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586315594123" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1586314806416">
+    <state x="240" y="53" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586315854751" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1586450159151">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586314806416" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1586314806414">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586450159151" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1586450159147">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586314806414" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1586314806413">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586450159147" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1586450159145">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586314806413" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1586314806415">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586450159145" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1586450159149">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586314806415" />
-    <state x="320" y="191" key="Vcs.Push.Dialog.v2" timestamp="1586315648691">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586450159149" />
+    <state x="229" y="89" key="SettingsEditor" timestamp="1586449879598">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586315648691" />
+    <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1586449879598" />
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2" timestamp="1586315877931">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="191" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1586315877931" />
     <state x="149" y="150" key="new project wizard" timestamp="1586315462027">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

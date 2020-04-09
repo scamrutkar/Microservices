@@ -1,1 +1,5 @@
-/Users/sagar/Downloads/Git Projects/Microservices/management-server/core-service/src/main/java/com/javacase/sagar/CoreServiceApplication.java
+/Users/sagar/Downloads/Git Projects/Microservices/Microservices/management-server/core-service/src/main/java/com/javacase/sagar/model/Device.java
+/Users/sagar/Downloads/Git Projects/Microservices/Microservices/management-server/core-service/src/main/java/com/javacase/sagar/model/AwsInfo.java
+/Users/sagar/Downloads/Git Projects/Microservices/Microservices/management-server/core-service/src/main/java/com/javacase/sagar/model/Authentication.java
+/Users/sagar/Downloads/Git Projects/Microservices/Microservices/management-server/core-service/src/main/java/com/javacase/sagar/model/SnmpInfo.java
+/Users/sagar/Downloads/Git Projects/Microservices/Microservices/management-server/core-service/src/main/java/com/javacase/sagar/CoreServiceApplication.java

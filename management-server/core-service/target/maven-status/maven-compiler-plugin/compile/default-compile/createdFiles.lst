@@ -1,0 +1,5 @@
+com/javacase/sagar/model/Device.class
+com/javacase/sagar/model/Authentication.class
+com/javacase/sagar/model/SnmpInfo.class
+com/javacase/sagar/model/AwsInfo.class
+com/javacase/sagar/CoreServiceApplication.class
