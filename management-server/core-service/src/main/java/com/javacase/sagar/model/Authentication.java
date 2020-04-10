@@ -1,23 +1,36 @@
 package com.javacase.sagar.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
-
-public class Authentication {
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
+@Entity
+@Table(name = "AUTHENTICATION_INFO")
+public class Authentication implements Serializable {
 
     @Id
     @GeneratedValue
+    @Column(name = "authentication_id")
     private Long id;
-    @Column(name = "USER_NAME")
+    @Column(name = "user_name")
     private String userName;
-    @Column(name = "PASSWORD")
+    @Column(name = "password")
     private String password;
+    @Column(name = "interface")
+    private String type ;
+    @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "DEVICE_ID")
+    @JoinColumn(name="device_id")
     private Device device;
+
 }

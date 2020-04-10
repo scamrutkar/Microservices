@@ -14,21 +14,25 @@ public class DeviceService {
     @Autowired
     DeviceRepository deviceRepository;
 
-    public Device getDevice(Long deviceId){
-        return deviceRepository.findById(deviceId).get();
+    public Device getDevice(Long deviceId) {
+        return deviceRepository.findById(deviceId).orElse(null);
     }
 
-    public List<Device> getAllDevice(){
+    public List<Device> getAllDevice() {
         List<Device> deviceList = new ArrayList<>();
         deviceRepository.findAll().forEach(deviceList::add);
-        return  deviceList;
+        return deviceList;
     }
 
-    public void saveDevice(Device device){
-        deviceRepository.save(device);
+    public void saveDevice(Device device) {
+        deviceRepository.save(
+                device.updateAuthenticationDeviceId()
+                        .updateAwsDeviceId()
+                        .updateSnmpDeviceId()
+        );
     }
 
-    public void deleteDevice(Long deviceId){
+    public void deleteDevice(Long deviceId) {
         deviceRepository.deleteById(deviceId);
     }
 

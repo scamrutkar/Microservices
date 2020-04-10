@@ -1,43 +1,70 @@
 package com.javacase.sagar.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
-@Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @ToString
+@Entity
 @Table(name = "DEVICE_INFO")
-public class Device {
+public class Device implements Serializable {
 
     @Id
     @GeneratedValue
-    @Column(name = "ID")
+    @Column(name = "device_id")
     private Long id;
-    @Column(name = "DEVICE_ID")
+    @Column(name = "device_unique_id")
     private String deviceId;
-    @Column(name = "DEVICE_NAME")
+    @Column(name = "device_name")
     private String deviceName;
-    @Column(name = "SERIAL_ID")
+    @Column(name = "serial_id")
     private String serialId;
-    @Column(name = "VENDOR")
+    @Column(name = "vendor")
     private String vendor;
-    @Column(name = "HOST_NAME")
+    @Column(name = "host_name")
     private String hostName;
-    @Column(name = "IP_ADDRESS")
+    @Column(name = "ip_address")
     private String ipAddress;
-    @Column(name = "DEVICE_TYPE")
+    @Column(name = "device_type")
     private String deviceType;
-    @OneToMany(mappedBy = "user")
-    private List<Authentication> authentication;
-//    private Authentication restInfo;
-//    private SnmpInfo snmpInfo;
-//    private AwsInfo awsInfo;
+    @OneToMany(mappedBy = "device", cascade = CascadeType.ALL)
+    private Set<Authentication> authentication;
+    @OneToOne(mappedBy = "device", cascade = CascadeType.ALL)
+    private SnmpInfo snmp;
+    @OneToOne(mappedBy = "device", cascade = CascadeType.ALL)
+    private AwsInfo aws;
+
+    public void addAuthentication(Authentication auth) {
+        this.authentication.add(auth);
+        auth.setDevice(this);
+    }
+
+    public Device updateAuthenticationDeviceId() {
+        this.getAuthentication()
+                .forEach(authentication -> authentication.setDevice(this));
+        return this;
+    }
+
+    public Device updateAwsDeviceId() {
+        this.getAws().setDevice(this);
+        return this;
+    }
+
+    public Device updateSnmpDeviceId() {
+        this.getSnmp().setDevice(this);
+        return this;
+    }
 
 }
