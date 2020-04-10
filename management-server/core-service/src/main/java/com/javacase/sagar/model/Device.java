@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter
@@ -33,7 +34,8 @@ public class Device {
     private String ipAddress;
     @Column(name = "DEVICE_TYPE")
     private String deviceType;
-//    private Authentication cliInfo;
+    @OneToMany(mappedBy = "user")
+    private List<Authentication> authentication;
 //    private Authentication restInfo;
 //    private SnmpInfo snmpInfo;
 //    private AwsInfo awsInfo;
