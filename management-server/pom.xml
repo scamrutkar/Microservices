@@ -18,6 +18,7 @@
     <modules>
         <module>core-service</module>
         <module>gateway-service</module>
+        <module>cisco-plugin</module>
     </modules>
 
     <properties>

@@ -9,11 +9,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="core-service" />
         <module name="gateway-service" />
+        <module name="cisco-plugin" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cisco-plugin" options="-parameters" />
       <module name="core-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
     </option>
