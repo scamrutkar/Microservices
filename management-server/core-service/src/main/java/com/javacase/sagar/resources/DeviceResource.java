@@ -1,7 +1,9 @@
 package com.javacase.sagar.resources;
 
+import com.javacase.sagar.dto.Device;
 import com.javacase.sagar.exceptions.DeviceNotFound;
-import com.javacase.sagar.model.Device;
+import com.javacase.sagar.exceptions.ErrorResponse;
+import com.javacase.sagar.exceptions.SuccessResponse;
 import com.javacase.sagar.service.DeviceService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,45 +11,74 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import java.net.URI;
+import java.sql.Timestamp;
+import java.time.Instant;
 import java.util.List;
 
 @RestController
+@RequestMapping(DeviceResource.DEVICE_BASE_API)
 public class DeviceResource {
 
-    private static final String DEVICE_GET_API = "/api/v1/devices/{deviceId}";
-    private static final String DEVICE_API = "/api/v1/devices";
-
-    private static final Logger LOG = LoggerFactory.getLogger(DeviceResource.class);
+    protected static final String DEVICE_BASE_API = "/api/v1/devices";
 
     @Autowired
     DeviceService deviceService;
 
-    @GetMapping(path = "/api/v1/devices/{deviceId}")
+    @GetMapping(path = "/{deviceId}")
     public ResponseEntity getDevice(@PathVariable("deviceId") Long deviceId) {
-        Device device = deviceService.getDevice(deviceId);
-        if (device == null)
-            return new ResponseEntity<>(String.format("Device is not present with device id : %s ", deviceId), HttpStatus.NOT_FOUND);
+        Device device;
+        try {
+            device = deviceService.getDevice(deviceId);
+        } catch (DeviceNotFound ex) {
+            ErrorResponse errorResponse = ErrorResponse.builder()
+                    .status(HttpStatus.NOT_FOUND.value())
+                    .details(ex.getMessage())
+                    .timestamp(Timestamp.from(Instant.now())).build();
+            return new ResponseEntity(errorResponse, HttpStatus.NOT_FOUND);
+        }
         return ResponseEntity.ok(device);
     }
 
-    @GetMapping(path = "/api/v1/devices")
+    @GetMapping
     public List<Device> getAllDevice() {
         return deviceService.getAllDevice();
     }
 
-    @PostMapping(path = "/api/v1/devices")
-    public void addDevice(@RequestBody Device device) {
-        LOG.info(String.format("Adding device : %s", device.toString()));
-        deviceService.saveDevice(device);
+    @PostMapping
+    public ResponseEntity addDevice(@RequestBody Device device) {
+        device = deviceService.saveDevice(device);
+
+        URI uri = ServletUriComponentsBuilder.fromCurrentContextPath()
+                .path(DEVICE_BASE_API + "/{id}")
+                .buildAndExpand(device.getId()).toUri();
+
+        SuccessResponse successResponse = SuccessResponse.builder()
+                .message(String.format("Device is created with DeviceId : %s", device.getId()))
+                .uri(uri).build();
+
+        return new ResponseEntity(successResponse, HttpStatus.CREATED);
     }
 
-    @PutMapping(path = "/api/v1/devices")
-    public void updateDevice(@RequestBody Device device) {
-        deviceService.saveDevice(device);
+    @PutMapping
+    public ResponseEntity updateDevice(@RequestBody Device device) {
+        device = deviceService.saveDevice(device);
+
+        URI uri = ServletUriComponentsBuilder.fromCurrentContextPath()
+                .path(DEVICE_BASE_API + "/{id}")
+                .buildAndExpand(device.getId()).toUri();
+
+        SuccessResponse successResponse = SuccessResponse.builder()
+                .message(String.format("Successfully updated device with DeviceId : %s", device.getId()))
+                .uri(uri)
+                .object(device).build();
+
+        return new ResponseEntity(successResponse, HttpStatus.CREATED);
     }
 
-    @DeleteMapping(path = "/api/v1/devices/{deviceId}")
+    @DeleteMapping(path = "/{deviceId}")
     public void deleteDevice(@PathVariable("deviceId") Long deviceId) {
         deviceService.deleteDevice(deviceId);
     }

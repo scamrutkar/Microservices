@@ -1,6 +1,7 @@
 package com.javacase.sagar.service;
 
-import com.javacase.sagar.model.Device;
+import com.javacase.sagar.exceptions.DeviceNotFound;
+import com.javacase.sagar.dto.Device;
 import com.javacase.sagar.repository.DeviceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,7 +16,8 @@ public class DeviceService {
     DeviceRepository deviceRepository;
 
     public Device getDevice(Long deviceId) {
-        return deviceRepository.findById(deviceId).orElse(null);
+        return deviceRepository.findById(deviceId)
+                .orElseThrow(() -> new DeviceNotFound(String.format("Device is not present with device id : %s ", deviceId)));
     }
 
     public List<Device> getAllDevice() {
@@ -24,12 +26,13 @@ public class DeviceService {
         return deviceList;
     }
 
-    public void saveDevice(Device device) {
-        deviceRepository.save(
+    public Device saveDevice(Device device) {
+        device = deviceRepository.save(
                 device.updateAuthenticationDeviceId()
                         .updateAwsDeviceId()
                         .updateSnmpDeviceId()
         );
+        return device;
     }
 
     public void deleteDevice(Long deviceId) {

@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f78e5a3c-8b2d-4db7-b33a-4a83d508bbeb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/CoreServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/CoreServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/Authentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/AwsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/AwsInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/SnmpInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/SnmpInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/exceptions/DeviceNotFound.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/exceptions/DeviceNotFound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/dto/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/AwsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/dto/AwsInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/dto/Device.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/model/SnmpInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/dto/SnmpInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/repository/DeviceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/repository/DeviceRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/resources/DeviceResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/resources/DeviceResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/service/DeviceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/java/com/javacase/sagar/service/DeviceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/CoreServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/CoreServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/model/Authentication.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/model/Authentication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/model/Device.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/model/Device.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/exceptions/DeviceNotFound.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/exceptions/DeviceNotFound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/model/Authentication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/model/AwsInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/model/Device.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/model/SnmpInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/repository/DeviceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/repository/DeviceRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/resources/DeviceResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/resources/DeviceResource.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/service/DeviceService.class" beforeDir="false" afterPath="$PROJECT_DIR$/core-service/target/classes/com/javacase/sagar/service/DeviceService.class" afterDir="false" />
     </list>
@@ -144,25 +147,25 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="240" y="53" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1586315854751" />
-    <state width="1398" height="257" key="GridCell.Tab.0.bottom" timestamp="1586536950799">
+    <state width="1398" height="257" key="GridCell.Tab.0.bottom" timestamp="1586672590063">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="257" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586536950799" />
+    <state width="1398" height="257" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1586672590063" />
     <state width="1398" height="257" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1586514384581" />
-    <state width="1398" height="257" key="GridCell.Tab.0.center" timestamp="1586536950796">
+    <state width="1398" height="257" key="GridCell.Tab.0.center" timestamp="1586672590058">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="257" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586536950796" />
+    <state width="1398" height="257" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1586672590058" />
     <state width="1398" height="257" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1586514384577" />
-    <state width="1398" height="257" key="GridCell.Tab.0.left" timestamp="1586536950795">
+    <state width="1398" height="257" key="GridCell.Tab.0.left" timestamp="1586672590054">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="257" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586536950795" />
+    <state width="1398" height="257" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1586672590054" />
     <state width="1398" height="257" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1586514384576" />
-    <state width="1398" height="257" key="GridCell.Tab.0.right" timestamp="1586536950797">
+    <state width="1398" height="257" key="GridCell.Tab.0.right" timestamp="1586672590061">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="257" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586536950797" />
+    <state width="1398" height="257" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1586672590061" />
     <state width="1398" height="257" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1586514384579" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1586518777390">
       <screen x="0" y="0" width="1440" height="900" />
